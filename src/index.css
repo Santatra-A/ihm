@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "playfair";
+    src: url("/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+.playfair {
+    font-family: "playfair", sans-serif;
+}
