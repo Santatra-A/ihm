@@ -12,6 +12,7 @@ const Navbar = () => {
 						<div className="flex items-center">
 							<div className="flex-shrink-0 flex items-center">
 								<Link to="/" className="flex items-center">
+									{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 									<svg
 										className="h-8 w-8 text-blue-600"
 										xmlns="http://www.w3.org/2000/svg"
@@ -38,12 +39,7 @@ const Navbar = () => {
 								>
 									Home
 								</Link>
-								<Link
-									to="/dashboard"
-									className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-								>
-									Dashboard
-								</Link>
+								
 								<a
 									href="#services"
 									className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
@@ -58,15 +54,23 @@ const Navbar = () => {
 								</a>
 							</div>
 						</div>
-						<div className="hidden sm:ml-6 sm:flex sm:items-center">
+						<div className="hidden space-x-2 sm:flex sm:items-center">
 							<Link
 								to="/login"
-								className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+								className="px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200 ease-in-out"
 							>
-								Se Connecter
+								Connexion
+							</Link>
+							<Link
+									to="/register"
+									className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-500"
+								>
+									Inscrivez vous
 							</Link>
 						</div>
 						<div className="-mr-2 flex items-center sm:hidden">
+
+
 							{/* Mobile menu button */}
 							<button
 								type="button"
@@ -143,12 +147,18 @@ const Navbar = () => {
 							>
 								Appointments
 							</a>
-							<div className="mt-4 pl-3 pr-4">
-								<Link
+							<div className="flex items-center gap-5">
+								* <Link
 									to="/login"
 									className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700"
 								>
 									Se Connecter
+								</Link> */}
+								<Link
+									to="/register"
+									className="w-full flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 hover:bg-indigo-500"
+								>
+									Inscrivez vous
 								</Link>
 							</div>
 						</div>
